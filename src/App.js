@@ -7,10 +7,10 @@ function App () {
   return (
     <div className='App'>
       <BrowserRouter>
-        {/* <Routes> */}
-        <Route index path='/' element={<Home />} />
-        <Route path='/events/:artistName' element={<EventListingPage />} />
-        {/* </Routes> */}
+        <Routes>
+          <Route index path='/' element={<Home />} />
+          <Route path='/events/:artistName' element={<EventListingPage />} />
+        </Routes>
       </BrowserRouter>
     </div>
   )
