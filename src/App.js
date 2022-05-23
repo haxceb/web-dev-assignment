@@ -6,7 +6,7 @@ import EventListingPage from './Pages/EventListing'
 function App () {
   return (
     <div className='App'>
-      <BrowserRouter basename='/'>
+      <BrowserRouter basename='https://haxceb.github.io/web-dev-assignment'>
         <Routes>
           <Route index path='/' element={<Home />} />
           <Route path='/events/:artistName' element={<EventListingPage />} />
