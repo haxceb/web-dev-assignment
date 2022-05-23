@@ -6,9 +6,9 @@ import EventListingPage from './Pages/EventListing'
 function App () {
   return (
     <div className='App'>
-      <BrowserRouter>
+      <BrowserRouter basename='/'>
         <Routes>
-          <Route index element={<Home />} />
+          <Route index path='/' element={<Home />} />
           <Route path='/events/:artistName' element={<EventListingPage />} />
         </Routes>
       </BrowserRouter>
